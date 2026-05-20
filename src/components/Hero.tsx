@@ -28,7 +28,7 @@ export default function Hero() {
             <div className="animate-fade-in inline-flex items-center gap-2.5 mb-6 md:mb-8">
               <div className="h-px w-6 md:w-8 bg-[#C4965A]" />
               <span className="text-[#C4965A] text-[10px] md:text-xs font-semibold tracking-[0.22em] uppercase">
-                CRM 72794/MG · Medicina de Longevidade
+                CRM 72794/MG · Emagrecimento e Reposição Hormonal
               </span>
               <div className="h-px w-6 md:w-8 bg-[#C4965A]" />
             </div>
