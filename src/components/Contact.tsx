@@ -1,7 +1,8 @@
-import { MapPin, Phone, Clock, MessageCircle } from 'lucide-react';
+import { MapPin, Phone, Clock, MessageCircle, Instagram } from 'lucide-react';
 
 const WA_LINK = 'https://api.whatsapp.com/send/?phone=553184035991&text&type=phone_number&app_absent=0';
 const PHONE = '+55 31 8403-5991';
+const IG_LINK = 'https://www.instagram.com/drvictorraquino/';
 
 const contactItems = [
   {
@@ -9,6 +10,12 @@ const contactItems = [
     label: 'Telefone / WhatsApp',
     value: PHONE,
     href: WA_LINK,
+  },
+  {
+    icon: Instagram,
+    label: 'Instagram',
+    value: '@drvictorraquino',
+    href: IG_LINK,
   },
   {
     icon: MapPin,

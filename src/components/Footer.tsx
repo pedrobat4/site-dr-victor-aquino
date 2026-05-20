@@ -1,6 +1,7 @@
-import { MessageCircle } from 'lucide-react';
+import { MessageCircle, Instagram } from 'lucide-react';
 
 const WA_LINK = 'https://api.whatsapp.com/send/?phone=553184035991&text&type=phone_number&app_absent=0';
+const IG_LINK = 'https://www.instagram.com/drvictorraquino/';
 const YEAR = new Date().getFullYear();
 
 const navLinks = [
@@ -52,9 +53,20 @@ export default function Footer() {
               <p className="text-white/40 text-sm leading-relaxed max-w-sm mb-5">
                 Medicina de Longevidade com abordagem moderna, individualizada e baseada em ciência. Foco em saúde, qualidade de vida e performance metabólica.
               </p>
-              <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-3 py-1.5">
-                <div className="w-1.5 h-1.5 rounded-full bg-[#C4965A]" />
-                <span className="text-white/40 text-xs">CRM 72794/MG</span>
+              <div className="flex items-center gap-3 flex-wrap">
+                <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-3 py-1.5">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#C4965A]" />
+                  <span className="text-white/40 text-xs">CRM 72794/MG</span>
+                </div>
+                <a
+                  href={IG_LINK}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-3 py-1.5 hover:bg-white/10 hover:border-[#C4965A]/30 transition-all duration-200"
+                >
+                  <Instagram size={13} className="text-[#C4965A]" />
+                  <span className="text-white/40 text-xs hover:text-white/60">@drvictorraquino</span>
+                </a>
               </div>
             </div>
 

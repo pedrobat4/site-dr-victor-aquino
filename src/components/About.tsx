@@ -9,7 +9,7 @@ const highlights = [
   {
     icon: Building2,
     title: 'Experiência Hospitalar',
-    desc: "Atuou de 2018 a 2023 em Rede D'Or, NotreDame Intermédica e Prevent Senior.",
+    desc: 'Atuou de 2018 a 2023 em São Paulo–SP, em grandes redes hospitalares como Rede D\'Or, NotreDame Intermédica e Prevent Senior.',
   },
   {
     icon: Award,
