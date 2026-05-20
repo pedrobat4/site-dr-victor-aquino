@@ -19,7 +19,7 @@ const steps = [
     icon: FlaskConical,
     num: '03',
     title: 'Protocolo Personalizado',
-    desc: 'Com base nos seus resultados, é desenvolvido um protocolo exclusivo: hormonal, metabólico ou de emagrecimento.',
+    desc: 'Com base nos seus resultados, é desenvolvido um protocolo exclusivo: hormonal, metabólico ou emagrecimento.',
   },
   {
     icon: TrendingUp,
