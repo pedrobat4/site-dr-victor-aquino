@@ -1,6 +1,7 @@
 import { MapPin, Phone, Clock, MessageCircle, Instagram } from 'lucide-react';
 
-const WA_LINK = 'https://api.whatsapp.com/send/?phone=553184035991&text&type=phone_number&app_absent=0';
+const WA_PHONE = '553184035991';
+const WA_LINK = `https://api.whatsapp.com/send?phone=${WA_PHONE}&type=phone_number&app_absent=0`;
 const PHONE = '+55 31 8403-5991';
 const IG_LINK = 'https://www.instagram.com/drvictorraquino/';
 
@@ -43,7 +44,7 @@ export default function Contact() {
     const text = encodeURIComponent(
       `Olá, Dr. Victor! Me chamo *${name}*.\n\nTelefone: ${phone}\nEspecialidade de interesse: ${service}\n\n${message}`
     );
-    window.open(`${WA_LINK}?text=${text}`, '_blank');
+    window.open(`https://api.whatsapp.com/send?phone=${WA_PHONE}&type=phone_number&app_absent=0&text=${text}`, '_blank');
   };
 
   return (
