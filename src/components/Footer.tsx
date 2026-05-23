@@ -51,7 +51,7 @@ export default function Footer() {
                 className="h-11 w-auto object-contain mb-6"
               />
               <p className="text-white/40 text-sm leading-relaxed max-w-sm mb-5">
-                Medicina de Longevidade com abordagem moderna, individualizada e baseada em ciência. Foco em saúde, qualidade de vida e performance metabólica.
+                Emagrecimento e Reposição Hormonal em BH com abordagem moderna, individualizada e baseada em ciência. Foco em saúde, qualidade de vida e performance metabólica.
               </p>
               <div className="flex items-center gap-3 flex-wrap">
                 <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-3 py-1.5">
