@@ -1,6 +1,7 @@
 import { MessageCircle, Instagram } from 'lucide-react';
 
-const WA_LINK = 'https://api.whatsapp.com/send/?phone=553184035991&text&type=phone_number&app_absent=0';
+const WA_MESSAGE = encodeURIComponent('Olá, gostaria de mais informações sobre a consulta com o Dr. Victor Aquino.');
+const WA_LINK = `https://api.whatsapp.com/send/?phone=553184035991&text=${WA_MESSAGE}&type=phone_number&app_absent=0`;
 const IG_LINK = 'https://www.instagram.com/drvictorraquino/';
 const YEAR = new Date().getFullYear();
 
