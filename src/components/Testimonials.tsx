@@ -1,6 +1,6 @@
 import { Star } from 'lucide-react';
+import { WA_LINK, WhatsAppIcon } from '../lib/whatsapp';
 
-const WA_LINK = 'https://api.whatsapp.com/send/?phone=553184035991&text&type=phone_number&app_absent=0';
 const GOOGLE_REVIEW_LINK = 'https://g.page/r/CR0S-it9JdbOEAE/review';
 
 const testimonials = [
@@ -126,6 +126,7 @@ export default function Testimonials() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 border-2 border-[#001728] text-[#001728] font-semibold px-9 py-4 rounded-2xl text-sm hover:bg-[#001728] hover:text-white transition-all duration-300"
           >
+            <WhatsAppIcon size={18} />
             Agendar Minha Consulta
           </a>
         </div>

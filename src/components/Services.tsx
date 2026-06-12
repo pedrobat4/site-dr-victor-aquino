@@ -1,6 +1,5 @@
-import { TrendingDown, Activity, Heart, Zap, Droplets, Flame, ArrowRight } from 'lucide-react';
-
-const WA_LINK = 'https://api.whatsapp.com/send/?phone=553184035991&text&type=phone_number&app_absent=0';
+import { TrendingDown, Activity, Heart, Zap, Droplets, Flame } from 'lucide-react';
+import { WA_LINK, WhatsAppIcon } from '../lib/whatsapp';
 
 const services = [
   {
@@ -136,9 +135,9 @@ export default function Services() {
                 </div>
 
                 {/* CTA row */}
-                <div className="flex items-center gap-2 text-[#C4965A] text-xs font-semibold tracking-wide mt-1 opacity-0 group-hover:opacity-100 transition-all duration-300 -translate-y-1 group-hover:translate-y-0">
+                <div className="flex items-center gap-2 text-[#C4965A] text-xs font-semibold tracking-wide mt-1 transition-all duration-300 lg:opacity-60 lg:group-hover:opacity-100">
+                  <WhatsAppIcon size={14} />
                   Agendar Consulta
-                  <ArrowRight size={13} />
                 </div>
 
                 {/* Bottom gold line on hover */}
@@ -162,8 +161,8 @@ export default function Services() {
               boxShadow: '0 8px 32px rgba(196,150,90,0.3)',
             }}
           >
+            <WhatsAppIcon size={18} />
             Agendar Consulta
-            <ArrowRight size={16} />
           </a>
         </div>
       </div>

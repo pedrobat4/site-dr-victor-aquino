@@ -1,7 +1,6 @@
-import { MessageCircle, Instagram } from 'lucide-react';
+import { Instagram } from 'lucide-react';
+import { WA_LINK, WhatsAppIcon } from '../lib/whatsapp';
 
-const WA_MESSAGE = encodeURIComponent('Olá, gostaria de mais informações sobre a consulta com o Dr. Victor Aquino.');
-const WA_LINK = `https://api.whatsapp.com/send/?phone=553184035991&text=${WA_MESSAGE}&type=phone_number&app_absent=0`;
 const IG_LINK = 'https://www.instagram.com/drvictorraquino/';
 const YEAR = new Date().getFullYear();
 
@@ -34,7 +33,7 @@ export default function Footer() {
         className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-[#25D366] flex items-center justify-center shadow-xl hover:scale-110 transition-transform duration-300 wa-pulse"
         aria-label="WhatsApp"
       >
-        <MessageCircle size={26} className="text-white fill-white" />
+        <WhatsAppIcon size={28} className="text-white" />
       </a>
 
       {/* Footer */}

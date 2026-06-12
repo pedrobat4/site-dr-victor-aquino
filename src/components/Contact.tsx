@@ -1,15 +1,13 @@
-import { MapPin, Phone, Clock, MessageCircle, Instagram } from 'lucide-react';
+import { MapPin, Clock, Instagram } from 'lucide-react';
+import { WA_PHONE, WA_LINK, PHONE_DISPLAY, WhatsAppIcon } from '../lib/whatsapp';
 
-const WA_PHONE = '553184035991';
-const WA_LINK = `https://api.whatsapp.com/send?phone=${WA_PHONE}&type=phone_number&app_absent=0`;
-const PHONE = '+55 31 8403-5991';
 const IG_LINK = 'https://www.instagram.com/drvictorraquino/';
 
 const contactItems = [
   {
-    icon: Phone,
+    icon: WhatsAppIcon,
     label: 'Telefone / WhatsApp',
-    value: PHONE,
+    value: PHONE_DISPLAY,
     href: WA_LINK,
   },
   {
@@ -180,7 +178,7 @@ export default function Contact() {
                 type="submit"
                 className="w-full flex items-center justify-center gap-3 bg-[#001728] text-white font-semibold py-4 rounded-2xl text-sm hover:bg-[#002240] transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5 mt-1"
               >
-                <MessageCircle size={17} />
+                <WhatsAppIcon size={18} />
                 Enviar pelo WhatsApp
               </button>
 

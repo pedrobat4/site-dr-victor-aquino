@@ -1,4 +1,4 @@
-const WA_LINK = 'https://api.whatsapp.com/send/?phone=553184035991&text&type=phone_number&app_absent=0';
+import { WA_LINK, WhatsAppIcon } from '../lib/whatsapp';
 
 const beforeAfters = [
   {
@@ -117,6 +117,7 @@ export default function Results() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-[#001728] text-white font-semibold px-9 py-4 rounded-2xl text-sm hover:bg-[#002240] transition-all duration-300 shadow-lg hover:-translate-y-0.5"
           >
+            <WhatsAppIcon size={18} />
             Quero Meus Resultados
           </a>
         </div>

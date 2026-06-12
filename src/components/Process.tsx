@@ -1,6 +1,5 @@
-import { MessageCircle, ClipboardList, FlaskConical, TrendingUp, ArrowRight } from 'lucide-react';
-
-const WA_LINK = 'https://api.whatsapp.com/send/?phone=553184035991&text&type=phone_number&app_absent=0';
+import { MessageCircle, ClipboardList, FlaskConical, TrendingUp } from 'lucide-react';
+import { WA_LINK, WhatsAppIcon } from '../lib/whatsapp';
 
 const steps = [
   {
@@ -54,8 +53,8 @@ export default function Process() {
             rel="noopener noreferrer"
             className="hidden md:inline-flex items-center gap-2 text-sm font-semibold text-[#001728] border border-[#001728]/20 px-6 py-3 rounded-2xl hover:bg-[#001728] hover:text-white transition-all duration-300 self-end"
           >
+            <WhatsAppIcon size={16} />
             Começar agora
-            <ArrowRight size={15} />
           </a>
         </div>
 
@@ -122,8 +121,8 @@ export default function Process() {
             rel="noopener noreferrer"
             className="relative shrink-0 inline-flex items-center gap-2 bg-[#C4965A] text-white font-semibold px-7 py-3.5 rounded-2xl text-sm hover:bg-[#b5884d] transition-all duration-300 shadow-lg shadow-[#C4965A]/25 hover:-translate-y-0.5"
           >
+            <WhatsAppIcon size={16} />
             Agendar Consulta
-            <ArrowRight size={15} />
           </a>
         </div>
       </div>

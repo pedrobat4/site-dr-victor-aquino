@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import { WA_LINK, WhatsAppIcon } from '../lib/whatsapp';
 
 const navLinks = [
   { label: 'Início', href: '#hero' },
@@ -9,8 +10,6 @@ const navLinks = [
   { label: 'Depoimentos', href: '#depoimentos' },
   { label: 'Contato', href: '#contato' },
 ];
-
-const WA_LINK = 'https://api.whatsapp.com/send/?phone=553184035991&text&type=phone_number&app_absent=0';
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -55,6 +54,7 @@ export default function Header() {
               rel="noopener noreferrer"
               className="hidden md:inline-flex items-center gap-2 bg-[#C4965A] text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-[#b5884d] transition-all duration-300 shadow-md shadow-[#C4965A]/20"
             >
+              <WhatsAppIcon size={16} />
               Agendar Consulta
             </a>
             <button
@@ -88,9 +88,10 @@ export default function Header() {
             href={WA_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-3 text-center bg-[#C4965A] text-white font-semibold py-3.5 rounded-2xl text-sm"
+            className="mt-3 inline-flex items-center justify-center gap-2 bg-[#C4965A] text-white font-semibold py-3.5 rounded-2xl text-sm"
             onClick={() => setOpen(false)}
           >
+            <WhatsAppIcon size={16} />
             Agendar Consulta
           </a>
         </div>

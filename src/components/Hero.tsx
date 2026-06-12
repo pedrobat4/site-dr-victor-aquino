@@ -1,6 +1,5 @@
 import { ChevronDown, Star } from 'lucide-react';
-
-const WA_LINK = 'https://api.whatsapp.com/send/?phone=553184035991&text&type=phone_number&app_absent=0';
+import { WA_LINK, WhatsAppIcon } from '../lib/whatsapp';
 
 export default function Hero() {
   return (
@@ -57,6 +56,7 @@ export default function Hero() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-[#C4965A] text-white font-semibold px-7 py-4 rounded-2xl text-sm hover:bg-[#b5884d] transition-all duration-300 shadow-lg shadow-[#C4965A]/30 hover:-translate-y-0.5"
               >
+                <WhatsAppIcon size={18} />
                 Agendar Consulta
               </a>
               <button
