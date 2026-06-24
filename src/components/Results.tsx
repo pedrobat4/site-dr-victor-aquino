@@ -56,6 +56,31 @@ export default function Results() {
             </p>
           </div>
 
+          {/* Featured before/after */}
+          <div className="mb-5 flex justify-center">
+            <div className="group relative w-full max-w-2xl rounded-3xl overflow-hidden shadow-xl aspect-square bg-gray-100">
+              <img
+                src="/antes-depois-victor.jpg"
+                alt="Antes e depois — resultado real do protocolo do Dr. Victor Aquino"
+                className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700"
+              />
+              {/* center divider */}
+              <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 w-px bg-white/40" />
+              {/* labels */}
+              <div className="absolute top-5 left-5 bg-[#001728]/85 backdrop-blur-sm text-white text-[11px] font-bold tracking-[0.2em] uppercase px-4 py-1.5 rounded-full shadow-lg">
+                Antes
+              </div>
+              <div className="absolute top-5 right-5 bg-[#C4965A] text-white text-[11px] font-bold tracking-[0.2em] uppercase px-4 py-1.5 rounded-full shadow-lg">
+                Depois
+              </div>
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#001728]/75 to-transparent p-6">
+                <p className="text-white/90 text-sm font-medium text-center">
+                  Transformação real com acompanhamento do Dr. Victor
+                </p>
+              </div>
+            </div>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {beforeAfters.map((item, i) => (
               <div key={i} className="group relative rounded-3xl overflow-hidden shadow-md aspect-[4/3] bg-gray-100">
