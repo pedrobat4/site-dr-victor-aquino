@@ -94,6 +94,7 @@ export default function Header() {
             <WhatsAppIcon size={16} />
             Agendar Consulta
           </a>
+          <p className="text-white/40 text-xs text-center mt-2">Atendimento particular.</p>
         </div>
       </div>
     </header>

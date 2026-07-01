@@ -49,7 +49,7 @@ export default function Hero() {
             </p>
 
             {/* CTAs */}
-            <div className="animate-slide-up-delay-2 flex flex-col sm:flex-row gap-3 justify-center lg:justify-start mb-10 md:mb-14">
+            <div className="animate-slide-up-delay-2 flex flex-col sm:flex-row gap-3 justify-center lg:justify-start mb-3">
               <a
                 href={WA_LINK}
                 target="_blank"
@@ -66,6 +66,9 @@ export default function Hero() {
                 Ver Especialidades
               </button>
             </div>
+            <p className="animate-slide-up-delay-2 text-white/40 text-xs text-center lg:text-left mb-10 md:mb-14">
+              Atendimento particular.
+            </p>
 
             {/* Stats */}
             <div className="animate-slide-up-delay-3 flex flex-wrap gap-6 sm:gap-10 justify-center lg:justify-start pt-7 border-t border-white/8">

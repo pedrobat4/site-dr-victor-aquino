@@ -164,6 +164,7 @@ export default function Services() {
             <WhatsAppIcon size={18} />
             Agendar Consulta
           </a>
+          <p className="text-white/40 text-xs mt-3">Atendimento particular.</p>
         </div>
       </div>
     </section>

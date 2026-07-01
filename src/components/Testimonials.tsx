@@ -129,6 +129,7 @@ export default function Testimonials() {
             <WhatsAppIcon size={18} />
             Agendar Minha Consulta
           </a>
+          <p className="text-[#001728]/50 text-xs mt-3">Atendimento particular.</p>
         </div>
       </div>
     </section>

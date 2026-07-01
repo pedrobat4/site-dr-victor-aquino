@@ -115,15 +115,18 @@ export default function Process() {
             <p className="text-white/45 text-sm">Atendimento personalizado em Belo Horizonte.</p>
           </div>
 
-          <a
-            href={WA_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="relative shrink-0 inline-flex items-center gap-2 bg-[#C4965A] text-white font-semibold px-7 py-3.5 rounded-2xl text-sm hover:bg-[#b5884d] transition-all duration-300 shadow-lg shadow-[#C4965A]/25 hover:-translate-y-0.5"
-          >
-            <WhatsAppIcon size={16} />
-            Agendar Consulta
-          </a>
+          <div className="relative shrink-0 flex flex-col items-center gap-2">
+            <a
+              href={WA_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-[#C4965A] text-white font-semibold px-7 py-3.5 rounded-2xl text-sm hover:bg-[#b5884d] transition-all duration-300 shadow-lg shadow-[#C4965A]/25 hover:-translate-y-0.5"
+            >
+              <WhatsAppIcon size={16} />
+              Agendar Consulta
+            </a>
+            <p className="text-white/45 text-xs">Atendimento particular.</p>
+          </div>
         </div>
       </div>
     </section>
