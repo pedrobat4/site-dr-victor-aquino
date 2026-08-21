@@ -11,6 +11,22 @@ const beforeAfters = [
     label: 'Resultado Real',
     sublabel: 'Reposição Hormonal',
   },
+  // TROCAR: confirmar com o Dr. Victor qual protocolo cada um destes 3 pacientes fez
+  {
+    src: '/antes-depois-2.jpg',
+    label: 'Resultado Real',
+    sublabel: 'Acompanhamento com o Dr. Victor',
+  },
+  {
+    src: '/antes-depois-3.jpg',
+    label: 'Resultado Real',
+    sublabel: 'Acompanhamento com o Dr. Victor',
+  },
+  {
+    src: '/antes-depois-4.jpg',
+    label: 'Resultado Real',
+    sublabel: 'Acompanhamento com o Dr. Victor',
+  },
 ];
 
 const mediaItems = [
@@ -81,9 +97,9 @@ export default function Results() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {beforeAfters.map((item, i) => (
-              <div key={i} className="group relative rounded-3xl overflow-hidden shadow-md aspect-[4/3] bg-gray-100">
+              <div key={i} className="group relative rounded-3xl overflow-hidden shadow-md aspect-square bg-gray-100">
                 <img
                   src={item.src}
                   alt={item.label}
