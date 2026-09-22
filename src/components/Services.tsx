@@ -1,4 +1,4 @@
-import { TrendingDown, Activity, Heart, Zap, Droplets, Flame } from 'lucide-react';
+import { TrendingDown, Activity, Heart, Zap, Droplets, Flame, Pill } from 'lucide-react';
 import { WA_LINK, WhatsAppIcon } from '../lib/whatsapp';
 
 const services = [
@@ -147,6 +147,80 @@ export default function Services() {
               </a>
             );
           })}
+        </div>
+
+        {/* ── Destaque: Implantes Hormonais ── */}
+        <div
+          className="group relative mt-4 md:mt-5 rounded-3xl overflow-hidden grid grid-cols-1 lg:grid-cols-5"
+          style={{
+            background: 'rgba(255,255,255,0.04)',
+            border: '1px solid rgba(196,150,90,0.2)',
+          }}
+        >
+          {/* Foto */}
+          <div className="relative lg:col-span-2 min-h-[260px] sm:min-h-[320px] lg:min-h-full overflow-hidden">
+            <img
+              src="/implantes-hormonais.jpg"
+              alt="Implante hormonal subcutâneo na palma da mão"
+              className="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.04] transition-transform duration-700"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-[#001020]/80 via-[#001020]/10 to-transparent" />
+            <div className="absolute top-5 left-5 bg-[#C4965A] text-white text-[10px] font-bold tracking-[0.2em] uppercase px-3 py-1.5 rounded-full shadow-lg">
+              Novo
+            </div>
+          </div>
+
+          {/* Texto */}
+          <div className="relative lg:col-span-3 flex flex-col gap-5 p-7 md:p-10">
+            <span className="absolute top-5 right-6 font-serif text-6xl font-bold select-none"
+              style={{ color: 'rgba(196,150,90,0.06)' }}>
+              07
+            </span>
+
+            <div className="w-12 h-12 rounded-2xl flex items-center justify-center"
+              style={{ background: 'linear-gradient(135deg, rgba(196,150,90,0.2) 0%, rgba(196,150,90,0.08) 100%)', border: '1px solid rgba(196,150,90,0.2)' }}
+            >
+              <Pill size={21} className="text-[#C4965A]" />
+            </div>
+
+            <div className="flex-1">
+              <h3 className="font-serif text-2xl md:text-3xl font-bold text-white mb-4 leading-snug">
+                Implantes Hormonais
+              </h3>
+              <div className="space-y-3 text-white/50 text-sm md:text-[15px] leading-relaxed">
+                <p>
+                  Os implantes hormonais são pequenos dispositivos inseridos sob a pele, geralmente na região dos glúteos,
+                  por meio de um procedimento rápido e minimamente invasivo.
+                </p>
+                <p>
+                  Eles liberam hormônios de forma contínua e gradual por meses, proporcionando uma abordagem personalizada
+                  de acordo com as necessidades de cada paciente.
+                </p>
+                <p>
+                  Podem ser indicados, em casos selecionados, para situações como queda da libido, sintomas da menopausa,
+                  lipedema, endometriose, alterações hormonais, redução de massa muscular, dificuldade no controle do peso
+                  e melhora da composição corporal.
+                </p>
+                <p className="text-white/70">
+                  A indicação é individualizada após avaliação clínica e exames laboratoriais.
+                </p>
+              </div>
+            </div>
+
+            <a
+              href={WA_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-[#C4965A] text-xs font-semibold tracking-wide hover:text-[#e8bf8a] transition-colors duration-300"
+            >
+              <WhatsAppIcon size={14} />
+              Agendar Consulta
+            </a>
+
+            <div className="absolute bottom-0 left-0 right-0 h-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              style={{ background: 'linear-gradient(90deg, transparent, #C4965A, transparent)' }}
+            />
+          </div>
         </div>
 
         {/* ── Bottom CTA ── */}
