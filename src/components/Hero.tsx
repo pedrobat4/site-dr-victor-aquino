@@ -1,5 +1,6 @@
 import { ChevronDown, Star } from 'lucide-react';
 import { WA_LINK, WhatsAppIcon } from '../lib/whatsapp';
+import { UNIDADE } from '../lib/unidade';
 
 export default function Hero() {
   return (
@@ -120,7 +121,7 @@ export default function Hero() {
                   </div>
                 </div>
                 <div className="absolute top-4 left-4 bg-[#C4965A] text-white text-[10px] font-bold tracking-[0.2em] uppercase px-3 py-1.5 rounded-full">
-                  Belo Horizonte
+                  {UNIDADE.cidade}
                 </div>
               </div>
             </div>
@@ -155,7 +156,7 @@ export default function Hero() {
                   </div>
                 </div>
                 <div className="absolute top-3 left-3 bg-[#C4965A] text-white text-[9px] font-bold tracking-[0.15em] uppercase px-2.5 py-1 rounded-full">
-                  Belo Horizonte
+                  {UNIDADE.cidade}
                 </div>
               </div>
             </div>

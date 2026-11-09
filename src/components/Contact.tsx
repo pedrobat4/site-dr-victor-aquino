@@ -1,5 +1,6 @@
 import { MapPin, Clock, Instagram } from 'lucide-react';
 import { WA_PHONE, WA_LINK, PHONE_DISPLAY, WhatsAppIcon } from '../lib/whatsapp';
+import { UNIDADE } from '../lib/unidade';
 
 const IG_LINK = 'https://www.instagram.com/drvictorraquino/';
 
@@ -19,8 +20,8 @@ const contactItems = [
   {
     icon: MapPin,
     label: 'Localização',
-    value: 'Belo Horizonte, MG',
-    href: 'https://g.page/r/CR0S-it9JdbOEAE/review',
+    value: UNIDADE.endereco ? `${UNIDADE.endereco} · ${UNIDADE.cidadeUF}` : UNIDADE.cidadeUF,
+    href: UNIDADE.mapsLink,
   },
   {
     icon: Clock,
@@ -96,7 +97,7 @@ export default function Contact() {
             {/* Map */}
             <div className="rounded-3xl overflow-hidden shadow-md flex-1 min-h-[220px] border border-gray-100">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.6105074290326!2d-43.933642899999995!3d-19.9408116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa699a71d90ad5b%3A0xced6257d2bfa121d!2sDr%20Victor%20Aquino!5e0!3m2!1spt-BR!2sbr!4v1779286227057!5m2!1spt-BR!2sbr"
+                src={UNIDADE.mapsEmbed}
                 width="100%"
                 height="260"
                 style={{ border: 0 }}

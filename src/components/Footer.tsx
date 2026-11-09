@@ -1,5 +1,6 @@
 import { Instagram } from 'lucide-react';
 import { WA_LINK, WhatsAppIcon } from '../lib/whatsapp';
+import { UNIDADE } from '../lib/unidade';
 
 const IG_LINK = 'https://www.instagram.com/drvictorraquino/';
 const YEAR = new Date().getFullYear();
@@ -112,7 +113,7 @@ export default function Footer() {
 
           <div className="mt-14 pt-8 border-t border-white/8 flex flex-col sm:flex-row items-center justify-between gap-4 text-white/25 text-xs">
             <span>© {YEAR} Dr. Victor Aquino · Todos os direitos reservados</span>
-            <span>Belo Horizonte, MG</span>
+            <span>{UNIDADE.endereco ? `${UNIDADE.endereco} · ${UNIDADE.cidadeUF}` : UNIDADE.cidadeUF}</span>
           </div>
         </div>
       </footer>
