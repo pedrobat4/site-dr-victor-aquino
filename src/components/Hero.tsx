@@ -74,7 +74,7 @@ export default function Hero() {
             {/* Stats */}
             <div className="animate-slide-up-delay-3 flex flex-wrap gap-6 sm:gap-10 justify-center lg:justify-start pt-7 border-t border-white/8">
               {[
-                { value: '+8', label: 'Anos de Experiência' },
+                { value: '+9', label: 'Anos de Experiência' },
                 { value: '+3', label: 'Pós-Graduações' },
                 { value: '5.0', label: 'Google', star: true },
               ].map((stat) => (
