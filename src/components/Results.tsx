@@ -28,7 +28,12 @@ const beforeAfters = [
     sublabel: 'Acompanhamento com o Dr. Victor',
   },
   {
-    src: '/antes-depois-4.jpg',
+    src: '/antes-depois-6.jpg',
+    label: 'Resultado Real',
+    sublabel: 'Acompanhamento com o Dr. Victor',
+  },
+  {
+    src: '/antes-depois-7.jpg',
     label: 'Resultado Real',
     sublabel: 'Acompanhamento com o Dr. Victor',
   },

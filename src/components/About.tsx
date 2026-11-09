@@ -44,7 +44,7 @@ export default function About() {
 
             {/* Experience badge — top left */}
             <div className="absolute -top-4 -left-4 md:-left-6 bg-[#001728] text-white rounded-2xl px-5 py-4 shadow-xl">
-              <div className="font-serif text-2xl font-bold leading-none">+8</div>
+              <div className="font-serif text-2xl font-bold leading-none">+9</div>
               <div className="text-white/55 text-[11px] mt-1 leading-tight">anos de<br />experiência</div>
             </div>
 
