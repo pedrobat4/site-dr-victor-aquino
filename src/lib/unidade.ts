@@ -6,6 +6,7 @@ export type Unidade = {
   slug: string;
   cidade: string;
   cidadeUF: string;
+  cidadeCurta: string; // forma curta, usada no rodapé e no título da aba
   endereco: string | null;
   mapsLink: string;
   mapsEmbed: string;
@@ -19,6 +20,7 @@ const UNIDADES: Record<string, Unidade> = {
     slug: '',
     cidade: 'Belo Horizonte',
     cidadeUF: 'Belo Horizonte, MG',
+    cidadeCurta: 'BH',
     endereco: null,
     mapsLink: 'https://g.page/r/CR0S-it9JdbOEAE/review',
     mapsEmbed:
@@ -28,6 +30,7 @@ const UNIDADES: Record<string, Unidade> = {
     slug: 'congonhas',
     cidade: 'Congonhas',
     cidadeUF: 'Congonhas, MG',
+    cidadeCurta: 'Congonhas',
     endereco: 'Avenida Marechal Floriano Peixoto, 175, 3º andar - sala 314',
     mapsLink: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(CONGONHAS_ENDERECO)}`,
     mapsEmbed: `https://www.google.com/maps?q=${encodeURIComponent(CONGONHAS_ENDERECO)}&output=embed`,
@@ -42,3 +45,20 @@ function detectar(): Unidade {
 }
 
 export const UNIDADE: Unidade = detectar();
+
+// Título e metas vêm fixos do index.html com a cidade padrão (BH).
+// Fora da unidade padrão, troca toda menção pela cidade da rota.
+if (typeof document !== 'undefined' && UNIDADE !== UNIDADES.bh) {
+  const trocar = (s: string) =>
+    s
+      .replace(/Belo Horizonte/g, UNIDADE.cidade)
+      .replace(/\bBH\b/g, UNIDADE.cidadeCurta);
+  document.title = trocar(document.title);
+  document
+    .querySelectorAll<HTMLMetaElement>(
+      'meta[name="description"], meta[property^="og:"], meta[name^="twitter:"]',
+    )
+    .forEach((m) => {
+      m.content = trocar(m.content);
+    });
+}

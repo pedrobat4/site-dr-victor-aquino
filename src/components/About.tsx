@@ -1,4 +1,5 @@
 import { GraduationCap, Building2, Award, Microscope } from 'lucide-react';
+import { UNIDADE } from '../lib/unidade';
 
 const highlights = [
   {
@@ -74,7 +75,7 @@ export default function About() {
               <strong className="text-[#001728] font-semibold">Saúde da Família, Geriatria e Nutrologia</strong>.
             </p>
             <p className="text-gray-500 leading-relaxed text-base md:text-lg mb-10">
-              Atua em Belo Horizonte com foco em emagrecimento, reposição hormonal e longevidade — abordagem moderna, individualizada e baseada em ciência.
+              Atua em {UNIDADE.cidade} com foco em emagrecimento, reposição hormonal e longevidade — abordagem moderna, individualizada e baseada em ciência.
             </p>
 
             {/* Highlights */}

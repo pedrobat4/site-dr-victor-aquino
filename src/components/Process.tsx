@@ -1,5 +1,6 @@
 import { MessageCircle, ClipboardList, FlaskConical, TrendingUp } from 'lucide-react';
 import { WA_LINK, WhatsAppIcon } from '../lib/whatsapp';
+import { UNIDADE } from '../lib/unidade';
 
 const steps = [
   {
@@ -112,7 +113,7 @@ export default function Process() {
             <p className="font-serif text-xl md:text-2xl font-bold text-white mb-1">
               Pronto para começar?
             </p>
-            <p className="text-white/45 text-sm">Atendimento personalizado em Belo Horizonte.</p>
+            <p className="text-white/45 text-sm">Atendimento personalizado em {UNIDADE.cidade}.</p>
           </div>
 
           <div className="relative shrink-0 flex flex-col items-center gap-2">
