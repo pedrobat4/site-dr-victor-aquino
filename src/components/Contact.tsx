@@ -1,5 +1,5 @@
 import { MapPin, Clock, Instagram } from 'lucide-react';
-import { WA_PHONE, WA_LINK, PHONE_DISPLAY, WhatsAppIcon } from '../lib/whatsapp';
+import { WA_PHONE, WA_LINK, WA_ORIGEM, PHONE_DISPLAY, WhatsAppIcon } from '../lib/whatsapp';
 import { UNIDADE } from '../lib/unidade';
 
 const IG_LINK = 'https://www.instagram.com/drvictorraquino/';
@@ -41,7 +41,7 @@ export default function Contact() {
     const message = (form.elements.namedItem('message') as HTMLTextAreaElement).value;
 
     const text = encodeURIComponent(
-      `Olá, Dr. Victor! Me chamo *${name}*.\n\nTelefone: ${phone}\nEspecialidade de interesse: ${service}\n\n${message}`
+      `Olá, Dr. Victor! Me chamo *${name}*.${WA_ORIGEM ? ` ${WA_ORIGEM}` : ''}\n\nTelefone: ${phone}\nEspecialidade de interesse: ${service}\n\n${message}`
     );
     window.open(`https://api.whatsapp.com/send?phone=${WA_PHONE}&type=phone_number&app_absent=0&text=${text}`, '_blank');
   };

@@ -1,11 +1,17 @@
 // Configuração central do WhatsApp do Dr. Victor Aquino.
 // Todos os botões/links que direcionam para o WhatsApp devem usar estas constantes.
 
+import { UNIDADE } from './unidade';
+
 export const WA_PHONE = '553184035991';
 export const PHONE_DISPLAY = '+55 31 8403-5991';
 
-export const WA_MESSAGE =
-  'Olá, gostaria de mais informações sobre a consulta com o Dr. Victor Aquino.';
+// Fora da unidade padrão (BH), a mensagem avisa de qual página a pessoa veio.
+export const WA_ORIGEM = UNIDADE.slug ? `Vim pela página de ${UNIDADE.cidade}.` : '';
+
+export const WA_MESSAGE = UNIDADE.slug
+  ? `Olá, vim pela página de ${UNIDADE.cidade} e gostaria de mais informações sobre a consulta com o Dr. Victor Aquino.`
+  : 'Olá, gostaria de mais informações sobre a consulta com o Dr. Victor Aquino.';
 
 // Link padrão já com a mensagem automática pré-preenchida.
 export const WA_LINK = `https://api.whatsapp.com/send/?phone=${WA_PHONE}&text=${encodeURIComponent(
